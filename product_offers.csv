@@ -1,0 +1,159 @@
+product_key,platform,coupon_code,coupon_discount,bank_name,payment_method,card_type,min_order_amount,discount_amount,discount_percent,max_discount
+apple-iphone-15-128gb-black,Amazon,FESTIVAL,0,Axis,Credit Card,Axis Bank Card,30000,750,0,750
+apple-iphone-15-128gb-black,Flipkart,SAVE10,0,HDFC,Credit Card,HDFC Credit Card,0,0,10,1500
+apple-iphone-15-128gb-black,Flipkart,,0,SBI,Debit Card,SBI Debit Card,20000,500,0,500
+apple-iphone-15-128gb-black,Flipkart,SAVE10,500,Axis,Credit Card,Axis Bank Card,30000,750,0,750
+apple-iphone-15-128gb-black,Myntra,SAVE10,100,HDFC,Credit Card,HDFC Credit Card,0,0,10,1500
+apple-iphone-15-128gb-black,Croma,FESTIVAL,100,Any,UPI,UPI,0,0,5,200
+samsung-galaxy-s24-256gb-onyx-black,Amazon,SAVE10,500,Any,UPI,UPI,0,0,5,200
+samsung-galaxy-s24-256gb-onyx-black,Amazon,,0,Axis,Credit Card,Axis Bank Card,30000,750,0,750
+samsung-galaxy-s24-256gb-onyx-black,Flipkart,,0,Axis,Credit Card,Axis Bank Card,30000,750,0,750
+samsung-galaxy-s24-256gb-onyx-black,Myntra,,0,Any,UPI,UPI,0,0,5,200
+samsung-galaxy-s24-256gb-onyx-black,Myntra,FESTIVAL,100,ICICI,Credit Card,ICICI Credit Card,50000,1000,0,1000
+samsung-galaxy-s24-256gb-onyx-black,Myntra,SAVE10,500,SBI,Debit Card,SBI Debit Card,20000,500,0,500
+samsung-galaxy-s24-256gb-onyx-black,Croma,SAVE10,100,Any,UPI,UPI,0,0,5,200
+samsung-galaxy-s24-256gb-onyx-black,Croma,,0,HDFC,Credit Card,HDFC Credit Card,0,0,10,1500
+samsung-galaxy-s24-256gb-onyx-black,Croma,FESTIVAL,100,Axis,Credit Card,Axis Bank Card,30000,750,0,750
+oneplus-12-256gb-flowy-emerald,Amazon,FESTIVAL,100,Axis,Credit Card,Axis Bank Card,30000,750,0,750
+oneplus-12-256gb-flowy-emerald,Amazon,,0,HDFC,Credit Card,HDFC Credit Card,0,0,10,1500
+oneplus-12-256gb-flowy-emerald,Amazon,FESTIVAL,500,ICICI,Credit Card,ICICI Credit Card,50000,1000,0,1000
+oneplus-12-256gb-flowy-emerald,Flipkart,FESTIVAL,0,HDFC,Credit Card,HDFC Credit Card,0,0,10,1500
+oneplus-12-256gb-flowy-emerald,Flipkart,,0,Axis,Credit Card,Axis Bank Card,30000,750,0,750
+oneplus-12-256gb-flowy-emerald,Myntra,SAVE10,500,HDFC,Credit Card,HDFC Credit Card,0,0,10,1500
+oneplus-12-256gb-flowy-emerald,Croma,FESTIVAL,500,Any,UPI,UPI,0,0,5,200
+oneplus-12-256gb-flowy-emerald,Croma,SAVE10,0,Axis,Credit Card,Axis Bank Card,30000,750,0,750
+oneplus-12-256gb-flowy-emerald,Croma,FESTIVAL,0,SBI,Debit Card,SBI Debit Card,20000,500,0,500
+xiaomi-redmi-note-13-pro-256gb,Amazon,,0,Axis,Credit Card,Axis Bank Card,30000,750,0,750
+xiaomi-redmi-note-13-pro-256gb,Amazon,,0,HDFC,Credit Card,HDFC Credit Card,0,0,10,1500
+xiaomi-redmi-note-13-pro-256gb,Amazon,SAVE10,500,SBI,Debit Card,SBI Debit Card,20000,500,0,500
+xiaomi-redmi-note-13-pro-256gb,Flipkart,,0,Any,UPI,UPI,0,0,5,200
+xiaomi-redmi-note-13-pro-256gb,Myntra,SAVE10,500,ICICI,Credit Card,ICICI Credit Card,50000,1000,0,1000
+xiaomi-redmi-note-13-pro-256gb,Myntra,SAVE10,500,HDFC,Credit Card,HDFC Credit Card,0,0,10,1500
+xiaomi-redmi-note-13-pro-256gb,Myntra,SAVE10,500,SBI,Debit Card,SBI Debit Card,20000,500,0,500
+xiaomi-redmi-note-13-pro-256gb,Croma,FESTIVAL,100,HDFC,Credit Card,HDFC Credit Card,0,0,10,1500
+xiaomi-redmi-note-13-pro-256gb,Croma,SAVE10,0,SBI,Debit Card,SBI Debit Card,20000,500,0,500
+xiaomi-redmi-note-13-pro-256gb,Croma,FESTIVAL,100,Any,UPI,UPI,0,0,5,200
+google-pixel-8-128gb-hazel,Amazon,,0,SBI,Debit Card,SBI Debit Card,20000,500,0,500
+google-pixel-8-128gb-hazel,Flipkart,SAVE10,100,Axis,Credit Card,Axis Bank Card,30000,750,0,750
+google-pixel-8-128gb-hazel,Myntra,FESTIVAL,500,Any,UPI,UPI,0,0,5,200
+google-pixel-8-128gb-hazel,Croma,SAVE10,500,SBI,Debit Card,SBI Debit Card,20000,500,0,500
+google-pixel-8-128gb-hazel,Croma,FESTIVAL,500,Axis,Credit Card,Axis Bank Card,30000,750,0,750
+google-pixel-8-128gb-hazel,Croma,,0,Any,UPI,UPI,0,0,5,200
+nothing-phone-2-256gb-dark-grey,Amazon,FESTIVAL,500,SBI,Debit Card,SBI Debit Card,20000,500,0,500
+nothing-phone-2-256gb-dark-grey,Amazon,FESTIVAL,0,HDFC,Credit Card,HDFC Credit Card,0,0,10,1500
+nothing-phone-2-256gb-dark-grey,Amazon,FESTIVAL,500,Any,UPI,UPI,0,0,5,200
+nothing-phone-2-256gb-dark-grey,Flipkart,,0,SBI,Debit Card,SBI Debit Card,20000,500,0,500
+nothing-phone-2-256gb-dark-grey,Flipkart,FESTIVAL,500,HDFC,Credit Card,HDFC Credit Card,0,0,10,1500
+nothing-phone-2-256gb-dark-grey,Myntra,FESTIVAL,0,Axis,Credit Card,Axis Bank Card,30000,750,0,750
+nothing-phone-2-256gb-dark-grey,Myntra,SAVE10,500,Any,UPI,UPI,0,0,5,200
+nothing-phone-2-256gb-dark-grey,Croma,SAVE10,0,HDFC,Credit Card,HDFC Credit Card,0,0,10,1500
+apple-airpods-pro-2nd-gen,Amazon,,0,ICICI,Credit Card,ICICI Credit Card,50000,1000,0,1000
+apple-airpods-pro-2nd-gen,Amazon,FESTIVAL,0,HDFC,Credit Card,HDFC Credit Card,0,0,10,1500
+apple-airpods-pro-2nd-gen,Amazon,,0,Axis,Credit Card,Axis Bank Card,30000,750,0,750
+apple-airpods-pro-2nd-gen,Flipkart,FESTIVAL,0,SBI,Debit Card,SBI Debit Card,20000,500,0,500
+apple-airpods-pro-2nd-gen,Flipkart,,0,Axis,Credit Card,Axis Bank Card,30000,750,0,750
+apple-airpods-pro-2nd-gen,Flipkart,,0,HDFC,Credit Card,HDFC Credit Card,0,0,10,1500
+apple-airpods-pro-2nd-gen,Myntra,,0,Any,UPI,UPI,0,0,5,200
+apple-airpods-pro-2nd-gen,Croma,FESTIVAL,500,Axis,Credit Card,Axis Bank Card,30000,750,0,750
+sony-wh-1000xm5-black,Amazon,,0,ICICI,Credit Card,ICICI Credit Card,50000,1000,0,1000
+sony-wh-1000xm5-black,Amazon,FESTIVAL,500,HDFC,Credit Card,HDFC Credit Card,0,0,10,1500
+sony-wh-1000xm5-black,Flipkart,SAVE10,100,ICICI,Credit Card,ICICI Credit Card,50000,1000,0,1000
+sony-wh-1000xm5-black,Flipkart,FESTIVAL,0,Axis,Credit Card,Axis Bank Card,30000,750,0,750
+sony-wh-1000xm5-black,Myntra,FESTIVAL,500,Any,UPI,UPI,0,0,5,200
+sony-wh-1000xm5-black,Croma,,0,HDFC,Credit Card,HDFC Credit Card,0,0,10,1500
+jbl-tune-770nc-blue,Amazon,FESTIVAL,0,Axis,Credit Card,Axis Bank Card,30000,750,0,750
+jbl-tune-770nc-blue,Amazon,SAVE10,0,ICICI,Credit Card,ICICI Credit Card,50000,1000,0,1000
+jbl-tune-770nc-blue,Amazon,FESTIVAL,0,SBI,Debit Card,SBI Debit Card,20000,500,0,500
+jbl-tune-770nc-blue,Flipkart,FESTIVAL,0,ICICI,Credit Card,ICICI Credit Card,50000,1000,0,1000
+jbl-tune-770nc-blue,Myntra,FESTIVAL,0,SBI,Debit Card,SBI Debit Card,20000,500,0,500
+jbl-tune-770nc-blue,Myntra,FESTIVAL,0,Axis,Credit Card,Axis Bank Card,30000,750,0,750
+jbl-tune-770nc-blue,Croma,,0,Any,UPI,UPI,0,0,5,200
+boat-airdopes-141-black,Amazon,SAVE10,500,Axis,Credit Card,Axis Bank Card,30000,750,0,750
+boat-airdopes-141-black,Flipkart,,0,HDFC,Credit Card,HDFC Credit Card,0,0,10,1500
+boat-airdopes-141-black,Myntra,SAVE10,500,SBI,Debit Card,SBI Debit Card,20000,500,0,500
+boat-airdopes-141-black,Croma,,0,ICICI,Credit Card,ICICI Credit Card,50000,1000,0,1000
+boat-airdopes-141-black,Croma,,0,HDFC,Credit Card,HDFC Credit Card,0,0,10,1500
+oneplus-buds-3-splendid-blue,Amazon,FESTIVAL,100,HDFC,Credit Card,HDFC Credit Card,0,0,10,1500
+oneplus-buds-3-splendid-blue,Amazon,FESTIVAL,0,ICICI,Credit Card,ICICI Credit Card,50000,1000,0,1000
+oneplus-buds-3-splendid-blue,Amazon,SAVE10,100,Axis,Credit Card,Axis Bank Card,30000,750,0,750
+oneplus-buds-3-splendid-blue,Flipkart,FESTIVAL,500,ICICI,Credit Card,ICICI Credit Card,50000,1000,0,1000
+oneplus-buds-3-splendid-blue,Flipkart,SAVE10,100,Any,UPI,UPI,0,0,5,200
+oneplus-buds-3-splendid-blue,Flipkart,,0,SBI,Debit Card,SBI Debit Card,20000,500,0,500
+oneplus-buds-3-splendid-blue,Myntra,,0,Any,UPI,UPI,0,0,5,200
+oneplus-buds-3-splendid-blue,Myntra,,0,Axis,Credit Card,Axis Bank Card,30000,750,0,750
+oneplus-buds-3-splendid-blue,Myntra,,0,ICICI,Credit Card,ICICI Credit Card,50000,1000,0,1000
+oneplus-buds-3-splendid-blue,Croma,SAVE10,0,ICICI,Credit Card,ICICI Credit Card,50000,1000,0,1000
+apple-watch-se-gps-44mm,Amazon,SAVE10,500,Axis,Credit Card,Axis Bank Card,30000,750,0,750
+apple-watch-se-gps-44mm,Amazon,,0,Any,UPI,UPI,0,0,5,200
+apple-watch-se-gps-44mm,Flipkart,SAVE10,100,HDFC,Credit Card,HDFC Credit Card,0,0,10,1500
+apple-watch-se-gps-44mm,Flipkart,FESTIVAL,500,SBI,Debit Card,SBI Debit Card,20000,500,0,500
+apple-watch-se-gps-44mm,Myntra,FESTIVAL,100,SBI,Debit Card,SBI Debit Card,20000,500,0,500
+apple-watch-se-gps-44mm,Myntra,SAVE10,100,HDFC,Credit Card,HDFC Credit Card,0,0,10,1500
+apple-watch-se-gps-44mm,Croma,FESTIVAL,500,ICICI,Credit Card,ICICI Credit Card,50000,1000,0,1000
+apple-watch-se-gps-44mm,Croma,FESTIVAL,0,Axis,Credit Card,Axis Bank Card,30000,750,0,750
+samsung-galaxy-watch-6-44mm,Amazon,,0,ICICI,Credit Card,ICICI Credit Card,50000,1000,0,1000
+samsung-galaxy-watch-6-44mm,Flipkart,,0,SBI,Debit Card,SBI Debit Card,20000,500,0,500
+samsung-galaxy-watch-6-44mm,Flipkart,SAVE10,500,HDFC,Credit Card,HDFC Credit Card,0,0,10,1500
+samsung-galaxy-watch-6-44mm,Flipkart,,0,ICICI,Credit Card,ICICI Credit Card,50000,1000,0,1000
+samsung-galaxy-watch-6-44mm,Myntra,SAVE10,500,SBI,Debit Card,SBI Debit Card,20000,500,0,500
+samsung-galaxy-watch-6-44mm,Myntra,SAVE10,100,Axis,Credit Card,Axis Bank Card,30000,750,0,750
+samsung-galaxy-watch-6-44mm,Myntra,SAVE10,500,ICICI,Credit Card,ICICI Credit Card,50000,1000,0,1000
+samsung-galaxy-watch-6-44mm,Croma,SAVE10,100,ICICI,Credit Card,ICICI Credit Card,50000,1000,0,1000
+samsung-galaxy-watch-6-44mm,Croma,SAVE10,100,HDFC,Credit Card,HDFC Credit Card,0,0,10,1500
+jbl-flip-6-portable-speaker,Amazon,SAVE10,0,Axis,Credit Card,Axis Bank Card,30000,750,0,750
+jbl-flip-6-portable-speaker,Amazon,SAVE10,500,ICICI,Credit Card,ICICI Credit Card,50000,1000,0,1000
+jbl-flip-6-portable-speaker,Flipkart,SAVE10,500,Any,UPI,UPI,0,0,5,200
+jbl-flip-6-portable-speaker,Myntra,SAVE10,100,Axis,Credit Card,Axis Bank Card,30000,750,0,750
+jbl-flip-6-portable-speaker,Croma,SAVE10,500,HDFC,Credit Card,HDFC Credit Card,0,0,10,1500
+jbl-flip-6-portable-speaker,Croma,FESTIVAL,500,ICICI,Credit Card,ICICI Credit Card,50000,1000,0,1000
+lenovo-ideapad-slim-5-16gb-512gb,Amazon,FESTIVAL,500,Axis,Credit Card,Axis Bank Card,30000,750,0,750
+lenovo-ideapad-slim-5-16gb-512gb,Amazon,,0,ICICI,Credit Card,ICICI Credit Card,50000,1000,0,1000
+lenovo-ideapad-slim-5-16gb-512gb,Amazon,SAVE10,100,SBI,Debit Card,SBI Debit Card,20000,500,0,500
+lenovo-ideapad-slim-5-16gb-512gb,Flipkart,SAVE10,500,SBI,Debit Card,SBI Debit Card,20000,500,0,500
+lenovo-ideapad-slim-5-16gb-512gb,Myntra,SAVE10,0,SBI,Debit Card,SBI Debit Card,20000,500,0,500
+lenovo-ideapad-slim-5-16gb-512gb,Myntra,SAVE10,0,HDFC,Credit Card,HDFC Credit Card,0,0,10,1500
+lenovo-ideapad-slim-5-16gb-512gb,Myntra,SAVE10,100,Axis,Credit Card,Axis Bank Card,30000,750,0,750
+lenovo-ideapad-slim-5-16gb-512gb,Croma,SAVE10,500,ICICI,Credit Card,ICICI Credit Card,50000,1000,0,1000
+lenovo-ideapad-slim-5-16gb-512gb,Croma,,0,SBI,Debit Card,SBI Debit Card,20000,500,0,500
+lenovo-ideapad-slim-5-16gb-512gb,Croma,FESTIVAL,100,Any,UPI,UPI,0,0,5,200
+hp-victus-gaming-laptop-i5-16gb-512gb,Amazon,FESTIVAL,500,Axis,Credit Card,Axis Bank Card,30000,750,0,750
+hp-victus-gaming-laptop-i5-16gb-512gb,Amazon,SAVE10,500,HDFC,Credit Card,HDFC Credit Card,0,0,10,1500
+hp-victus-gaming-laptop-i5-16gb-512gb,Amazon,FESTIVAL,0,SBI,Debit Card,SBI Debit Card,20000,500,0,500
+hp-victus-gaming-laptop-i5-16gb-512gb,Flipkart,FESTIVAL,0,HDFC,Credit Card,HDFC Credit Card,0,0,10,1500
+hp-victus-gaming-laptop-i5-16gb-512gb,Flipkart,FESTIVAL,0,SBI,Debit Card,SBI Debit Card,20000,500,0,500
+hp-victus-gaming-laptop-i5-16gb-512gb,Myntra,FESTIVAL,100,Axis,Credit Card,Axis Bank Card,30000,750,0,750
+hp-victus-gaming-laptop-i5-16gb-512gb,Croma,FESTIVAL,100,Any,UPI,UPI,0,0,5,200
+nike-club-men-hoodie-black,Amazon,,0,HDFC,Credit Card,HDFC Credit Card,0,0,10,1500
+nike-club-men-hoodie-black,Flipkart,,0,ICICI,Credit Card,ICICI Credit Card,50000,1000,0,1000
+nike-club-men-hoodie-black,Myntra,SAVE10,100,Any,UPI,UPI,0,0,5,200
+nike-club-men-hoodie-black,Croma,FESTIVAL,0,Axis,Credit Card,Axis Bank Card,30000,750,0,750
+adidas-men-running-shoes-duramo-sl,Amazon,,0,ICICI,Credit Card,ICICI Credit Card,50000,1000,0,1000
+adidas-men-running-shoes-duramo-sl,Amazon,FESTIVAL,100,Axis,Credit Card,Axis Bank Card,30000,750,0,750
+adidas-men-running-shoes-duramo-sl,Amazon,,0,HDFC,Credit Card,HDFC Credit Card,0,0,10,1500
+adidas-men-running-shoes-duramo-sl,Flipkart,SAVE10,100,ICICI,Credit Card,ICICI Credit Card,50000,1000,0,1000
+adidas-men-running-shoes-duramo-sl,Flipkart,,0,SBI,Debit Card,SBI Debit Card,20000,500,0,500
+adidas-men-running-shoes-duramo-sl,Myntra,FESTIVAL,100,ICICI,Credit Card,ICICI Credit Card,50000,1000,0,1000
+adidas-men-running-shoes-duramo-sl,Myntra,,0,Any,UPI,UPI,0,0,5,200
+adidas-men-running-shoes-duramo-sl,Myntra,FESTIVAL,0,HDFC,Credit Card,HDFC Credit Card,0,0,10,1500
+adidas-men-running-shoes-duramo-sl,Croma,SAVE10,100,Axis,Credit Card,Axis Bank Card,30000,750,0,750
+adidas-men-running-shoes-duramo-sl,Croma,SAVE10,500,HDFC,Credit Card,HDFC Credit Card,0,0,10,1500
+adidas-men-running-shoes-duramo-sl,Croma,,0,ICICI,Credit Card,ICICI Credit Card,50000,1000,0,1000
+levi-s-men-511-slim-jeans-blue,Amazon,FESTIVAL,500,SBI,Debit Card,SBI Debit Card,20000,500,0,500
+levi-s-men-511-slim-jeans-blue,Amazon,SAVE10,0,HDFC,Credit Card,HDFC Credit Card,0,0,10,1500
+levi-s-men-511-slim-jeans-blue,Flipkart,,0,SBI,Debit Card,SBI Debit Card,20000,500,0,500
+levi-s-men-511-slim-jeans-blue,Flipkart,FESTIVAL,100,Axis,Credit Card,Axis Bank Card,30000,750,0,750
+levi-s-men-511-slim-jeans-blue,Flipkart,,0,HDFC,Credit Card,HDFC Credit Card,0,0,10,1500
+levi-s-men-511-slim-jeans-blue,Myntra,SAVE10,0,ICICI,Credit Card,ICICI Credit Card,50000,1000,0,1000
+levi-s-men-511-slim-jeans-blue,Myntra,FESTIVAL,100,Axis,Credit Card,Axis Bank Card,30000,750,0,750
+levi-s-men-511-slim-jeans-blue,Myntra,FESTIVAL,100,HDFC,Credit Card,HDFC Credit Card,0,0,10,1500
+levi-s-men-511-slim-jeans-blue,Croma,,0,HDFC,Credit Card,HDFC Credit Card,0,0,10,1500
+levi-s-men-511-slim-jeans-blue,Croma,SAVE10,0,Any,UPI,UPI,0,0,5,200
+levi-s-men-511-slim-jeans-blue,Croma,,0,SBI,Debit Card,SBI Debit Card,20000,500,0,500
+puma-unisex-essential-logo-tee,Amazon,,0,SBI,Debit Card,SBI Debit Card,20000,500,0,500
+puma-unisex-essential-logo-tee,Amazon,FESTIVAL,100,Axis,Credit Card,Axis Bank Card,30000,750,0,750
+puma-unisex-essential-logo-tee,Flipkart,SAVE10,100,Any,UPI,UPI,0,0,5,200
+puma-unisex-essential-logo-tee,Myntra,,0,Axis,Credit Card,Axis Bank Card,30000,750,0,750
+puma-unisex-essential-logo-tee,Myntra,,0,HDFC,Credit Card,HDFC Credit Card,0,0,10,1500
+puma-unisex-essential-logo-tee,Myntra,,0,Any,UPI,UPI,0,0,5,200
+puma-unisex-essential-logo-tee,Croma,FESTIVAL,100,Any,UPI,UPI,0,0,5,200
+puma-unisex-essential-logo-tee,Croma,FESTIVAL,500,Axis,Credit Card,Axis Bank Card,30000,750,0,750

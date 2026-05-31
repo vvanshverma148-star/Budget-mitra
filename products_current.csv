@@ -1,0 +1,81 @@
+id,product_key,category,brand,product_name,platform,price_inr,rating,reviews_count,delivery_days,image,url
+1,apple-iphone-15-128gb-black,mobile,Apple,Apple iPhone 15 128GB Black,Amazon,68400,4.2,9812,1,/images/apple-iphone-15-128gb-black.jpg,https://amazon.example.com/apple-iphone-15-128gb-black
+2,apple-iphone-15-128gb-black,mobile,Apple,Apple iPhone 15 128GB Black,Flipkart,66780,4.6,11949,3,/images/apple-iphone-15-128gb-black.jpg,https://flipkart.example.com/apple-iphone-15-128gb-black
+3,apple-iphone-15-128gb-black,mobile,Apple,Apple iPhone 15 128GB Black,Myntra,69760,4.2,8267,5,/images/apple-iphone-15-128gb-black.jpg,https://myntra.example.com/apple-iphone-15-128gb-black
+4,apple-iphone-15-128gb-black,mobile,Apple,Apple iPhone 15 128GB Black,Croma,69760,4.6,7996,4,/images/apple-iphone-15-128gb-black.jpg,https://croma.example.com/apple-iphone-15-128gb-black
+5,samsung-galaxy-s24-256gb-onyx-black,mobile,Samsung,Samsung Galaxy S24 256GB Onyx Black,Amazon,75000,4.7,14838,3,/images/samsung-galaxy-s24-256gb-onyx-black.jpg,https://amazon.example.com/samsung-galaxy-s24-256gb-onyx-black
+6,samsung-galaxy-s24-256gb-onyx-black,mobile,Samsung,Samsung Galaxy S24 256GB Onyx Black,Flipkart,74270,4.2,9543,4,/images/samsung-galaxy-s24-256gb-onyx-black.jpg,https://flipkart.example.com/samsung-galaxy-s24-256gb-onyx-black
+7,samsung-galaxy-s24-256gb-onyx-black,mobile,Samsung,Samsung Galaxy S24 256GB Onyx Black,Myntra,76750,4.8,11421,6,/images/samsung-galaxy-s24-256gb-onyx-black.jpg,https://myntra.example.com/samsung-galaxy-s24-256gb-onyx-black
+8,samsung-galaxy-s24-256gb-onyx-black,mobile,Samsung,Samsung Galaxy S24 256GB Onyx Black,Croma,76750,4.4,7740,3,/images/samsung-galaxy-s24-256gb-onyx-black.jpg,https://croma.example.com/samsung-galaxy-s24-256gb-onyx-black
+9,oneplus-12-256gb-flowy-emerald,mobile,OnePlus,OnePlus 12 256GB Flowy Emerald,Amazon,62250,4.3,16706,1,/images/oneplus-12-256gb-flowy-emerald.jpg,https://amazon.example.com/oneplus-12-256gb-flowy-emerald
+10,oneplus-12-256gb-flowy-emerald,mobile,OnePlus,OnePlus 12 256GB Flowy Emerald,Flipkart,60570,4.3,7032,4,/images/oneplus-12-256gb-flowy-emerald.jpg,https://flipkart.example.com/oneplus-12-256gb-flowy-emerald
+11,oneplus-12-256gb-flowy-emerald,mobile,OnePlus,OnePlus 12 256GB Flowy Emerald,Myntra,63340,4.8,6194,6,/images/oneplus-12-256gb-flowy-emerald.jpg,https://myntra.example.com/oneplus-12-256gb-flowy-emerald
+12,oneplus-12-256gb-flowy-emerald,mobile,OnePlus,OnePlus 12 256GB Flowy Emerald,Croma,63340,4.4,5958,2,/images/oneplus-12-256gb-flowy-emerald.jpg,https://croma.example.com/oneplus-12-256gb-flowy-emerald
+13,xiaomi-redmi-note-13-pro-256gb,mobile,Xiaomi,Xiaomi Redmi Note 13 Pro+ 256GB,Amazon,29800,4.3,5088,3,/images/xiaomi-redmi-note-13-pro-256gb.jpg,https://amazon.example.com/xiaomi-redmi-note-13-pro-256gb
+14,xiaomi-redmi-note-13-pro-256gb,mobile,Xiaomi,Xiaomi Redmi Note 13 Pro+ 256GB,Flipkart,29550,4.5,1056,4,/images/xiaomi-redmi-note-13-pro-256gb.jpg,https://flipkart.example.com/xiaomi-redmi-note-13-pro-256gb
+15,xiaomi-redmi-note-13-pro-256gb,mobile,Xiaomi,Xiaomi Redmi Note 13 Pro+ 256GB,Myntra,30100,4.6,9866,3,/images/xiaomi-redmi-note-13-pro-256gb.jpg,https://myntra.example.com/xiaomi-redmi-note-13-pro-256gb
+16,xiaomi-redmi-note-13-pro-256gb,mobile,Xiaomi,Xiaomi Redmi Note 13 Pro+ 256GB,Croma,30100,4.7,7683,3,/images/xiaomi-redmi-note-13-pro-256gb.jpg,https://croma.example.com/xiaomi-redmi-note-13-pro-256gb
+17,google-pixel-8-128gb-hazel,mobile,Google,Google Pixel 8 128GB Hazel,Amazon,63400,4.7,9542,1,/images/google-pixel-8-128gb-hazel.jpg,https://amazon.example.com/google-pixel-8-128gb-hazel
+18,google-pixel-8-128gb-hazel,mobile,Google,Google Pixel 8 128GB Hazel,Flipkart,62150,4.6,11651,2,/images/google-pixel-8-128gb-hazel.jpg,https://flipkart.example.com/google-pixel-8-128gb-hazel
+19,google-pixel-8-128gb-hazel,mobile,Google,Google Pixel 8 128GB Hazel,Myntra,64510,4.7,7256,5,/images/google-pixel-8-128gb-hazel.jpg,https://myntra.example.com/google-pixel-8-128gb-hazel
+20,google-pixel-8-128gb-hazel,mobile,Google,Google Pixel 8 128GB Hazel,Croma,64510,4.3,813,4,/images/google-pixel-8-128gb-hazel.jpg,https://croma.example.com/google-pixel-8-128gb-hazel
+21,nothing-phone-2-256gb-dark-grey,mobile,Nothing,Nothing Phone (2) 256GB Dark Grey,Amazon,40400,4.4,7325,1,/images/nothing-phone-2-256gb-dark-grey.jpg,https://amazon.example.com/nothing-phone-2-256gb-dark-grey
+22,nothing-phone-2-256gb-dark-grey,mobile,Nothing,Nothing Phone (2) 256GB Dark Grey,Flipkart,39200,4.7,17772,3,/images/nothing-phone-2-256gb-dark-grey.jpg,https://flipkart.example.com/nothing-phone-2-256gb-dark-grey
+23,nothing-phone-2-256gb-dark-grey,mobile,Nothing,Nothing Phone (2) 256GB Dark Grey,Myntra,40900,4.5,8901,5,/images/nothing-phone-2-256gb-dark-grey.jpg,https://myntra.example.com/nothing-phone-2-256gb-dark-grey
+24,nothing-phone-2-256gb-dark-grey,mobile,Nothing,Nothing Phone (2) 256GB Dark Grey,Croma,40600,4.7,13562,2,/images/nothing-phone-2-256gb-dark-grey.jpg,https://croma.example.com/nothing-phone-2-256gb-dark-grey
+25,apple-airpods-pro-2nd-gen,headphones,Apple,Apple AirPods Pro (2nd Gen),Amazon,22400,4.7,6208,2,/images/apple-airpods-pro-2nd-gen.jpg,https://amazon.example.com/apple-airpods-pro-2nd-gen
+26,apple-airpods-pro-2nd-gen,headphones,Apple,Apple AirPods Pro (2nd Gen),Flipkart,21770,4.3,3483,3,/images/apple-airpods-pro-2nd-gen.jpg,https://flipkart.example.com/apple-airpods-pro-2nd-gen
+27,apple-airpods-pro-2nd-gen,headphones,Apple,Apple AirPods Pro (2nd Gen),Myntra,23760,4.3,4553,4,/images/apple-airpods-pro-2nd-gen.jpg,https://myntra.example.com/apple-airpods-pro-2nd-gen
+28,apple-airpods-pro-2nd-gen,headphones,Apple,Apple AirPods Pro (2nd Gen),Croma,21720,4.3,14837,4,/images/apple-airpods-pro-2nd-gen.jpg,https://croma.example.com/apple-airpods-pro-2nd-gen
+29,sony-wh-1000xm5-black,headphones,Sony,Sony WH-1000XM5 Black,Amazon,30400,4.6,11361,1,/images/sony-wh-1000xm5-black.jpg,https://amazon.example.com/sony-wh-1000xm5-black
+30,sony-wh-1000xm5-black,headphones,Sony,Sony WH-1000XM5 Black,Flipkart,29350,4.2,14117,3,/images/sony-wh-1000xm5-black.jpg,https://flipkart.example.com/sony-wh-1000xm5-black
+31,sony-wh-1000xm5-black,headphones,Sony,Sony WH-1000XM5 Black,Myntra,32400,4.4,4753,4,/images/sony-wh-1000xm5-black.jpg,https://myntra.example.com/sony-wh-1000xm5-black
+32,sony-wh-1000xm5-black,headphones,Sony,Sony WH-1000XM5 Black,Croma,29800,4.8,10372,3,/images/sony-wh-1000xm5-black.jpg,https://croma.example.com/sony-wh-1000xm5-black
+33,jbl-tune-770nc-blue,headphones,JBL,JBL Tune 770NC Blue,Amazon,9000,4.2,8932,1,/images/jbl-tune-770nc-blue.jpg,https://amazon.example.com/jbl-tune-770nc-blue
+34,jbl-tune-770nc-blue,headphones,JBL,JBL Tune 770NC Blue,Flipkart,8360,4.2,6495,4,/images/jbl-tune-770nc-blue.jpg,https://flipkart.example.com/jbl-tune-770nc-blue
+35,jbl-tune-770nc-blue,headphones,JBL,JBL Tune 770NC Blue,Myntra,10120,4.3,9504,4,/images/jbl-tune-770nc-blue.jpg,https://myntra.example.com/jbl-tune-770nc-blue
+36,jbl-tune-770nc-blue,headphones,JBL,JBL Tune 770NC Blue,Croma,8590,4.2,1479,4,/images/jbl-tune-770nc-blue.jpg,https://croma.example.com/jbl-tune-770nc-blue
+37,boat-airdopes-141-black,headphones,boAt,boAt Airdopes 141 Black,Amazon,1900,4.8,2002,2,/images/boat-airdopes-141-black.jpg,https://amazon.example.com/boat-airdopes-141-black
+38,boat-airdopes-141-black,headphones,boAt,boAt Airdopes 141 Black,Flipkart,1480,4.4,16683,2,/images/boat-airdopes-141-black.jpg,https://flipkart.example.com/boat-airdopes-141-black
+39,boat-airdopes-141-black,headphones,boAt,boAt Airdopes 141 Black,Myntra,1720,4.9,8786,6,/images/boat-airdopes-141-black.jpg,https://myntra.example.com/boat-airdopes-141-black
+40,boat-airdopes-141-black,headphones,boAt,boAt Airdopes 141 Black,Croma,1310,4.4,16670,4,/images/boat-airdopes-141-black.jpg,https://croma.example.com/boat-airdopes-141-black
+41,oneplus-buds-3-splendid-blue,headphones,OnePlus,OnePlus Buds 3 Splendid Blue,Amazon,5300,4.5,2013,1,/images/oneplus-buds-3-splendid-blue.jpg,https://amazon.example.com/oneplus-buds-3-splendid-blue
+42,oneplus-buds-3-splendid-blue,headphones,OnePlus,OnePlus Buds 3 Splendid Blue,Flipkart,5820,4.7,13252,3,/images/oneplus-buds-3-splendid-blue.jpg,https://flipkart.example.com/oneplus-buds-3-splendid-blue
+43,oneplus-buds-3-splendid-blue,headphones,OnePlus,OnePlus Buds 3 Splendid Blue,Myntra,5940,4.7,10413,5,/images/oneplus-buds-3-splendid-blue.jpg,https://myntra.example.com/oneplus-buds-3-splendid-blue
+44,oneplus-buds-3-splendid-blue,headphones,OnePlus,OnePlus Buds 3 Splendid Blue,Croma,5550,4.5,5976,2,/images/oneplus-buds-3-splendid-blue.jpg,https://croma.example.com/oneplus-buds-3-splendid-blue
+45,apple-watch-se-gps-44mm,electronics,Apple,Apple Watch SE GPS 44mm,Amazon,30000,4.2,2407,3,/images/apple-watch-se-gps-44mm.jpg,https://amazon.example.com/apple-watch-se-gps-44mm
+46,apple-watch-se-gps-44mm,electronics,Apple,Apple Watch SE GPS 44mm,Flipkart,29050,4.5,5106,2,/images/apple-watch-se-gps-44mm.jpg,https://flipkart.example.com/apple-watch-se-gps-44mm
+47,apple-watch-se-gps-44mm,electronics,Apple,Apple Watch SE GPS 44mm,Myntra,30100,4.3,8192,6,/images/apple-watch-se-gps-44mm.jpg,https://myntra.example.com/apple-watch-se-gps-44mm
+48,apple-watch-se-gps-44mm,electronics,Apple,Apple Watch SE GPS 44mm,Croma,29950,4.2,2871,5,/images/apple-watch-se-gps-44mm.jpg,https://croma.example.com/apple-watch-se-gps-44mm
+49,samsung-galaxy-watch-6-44mm,electronics,Samsung,Samsung Galaxy Watch 6 44mm,Amazon,27100,4.6,16834,3,/images/samsung-galaxy-watch-6-44mm.jpg,https://amazon.example.com/samsung-galaxy-watch-6-44mm
+50,samsung-galaxy-watch-6-44mm,electronics,Samsung,Samsung Galaxy Watch 6 44mm,Flipkart,26990,4.2,1499,2,/images/samsung-galaxy-watch-6-44mm.jpg,https://flipkart.example.com/samsung-galaxy-watch-6-44mm
+51,samsung-galaxy-watch-6-44mm,electronics,Samsung,Samsung Galaxy Watch 6 44mm,Myntra,27340,4.3,1644,4,/images/samsung-galaxy-watch-6-44mm.jpg,https://myntra.example.com/samsung-galaxy-watch-6-44mm
+52,samsung-galaxy-watch-6-44mm,electronics,Samsung,Samsung Galaxy Watch 6 44mm,Croma,27130,4.4,15809,2,/images/samsung-galaxy-watch-6-44mm.jpg,https://croma.example.com/samsung-galaxy-watch-6-44mm
+53,jbl-flip-6-portable-speaker,electronics,JBL,JBL Flip 6 Portable Speaker,Amazon,10250,4.5,4549,3,/images/jbl-flip-6-portable-speaker.jpg,https://amazon.example.com/jbl-flip-6-portable-speaker
+54,jbl-flip-6-portable-speaker,electronics,JBL,JBL Flip 6 Portable Speaker,Flipkart,9350,4.4,13010,2,/images/jbl-flip-6-portable-speaker.jpg,https://flipkart.example.com/jbl-flip-6-portable-speaker
+55,jbl-flip-6-portable-speaker,electronics,JBL,JBL Flip 6 Portable Speaker,Myntra,9700,4.4,12844,3,/images/jbl-flip-6-portable-speaker.jpg,https://myntra.example.com/jbl-flip-6-portable-speaker
+56,jbl-flip-6-portable-speaker,electronics,JBL,JBL Flip 6 Portable Speaker,Croma,9700,4.5,13932,2,/images/jbl-flip-6-portable-speaker.jpg,https://croma.example.com/jbl-flip-6-portable-speaker
+57,lenovo-ideapad-slim-5-16gb-512gb,electronics,Lenovo,Lenovo IdeaPad Slim 5 16GB 512GB,Amazon,65400,4.4,15284,2,/images/lenovo-ideapad-slim-5-16gb-512gb.jpg,https://amazon.example.com/lenovo-ideapad-slim-5-16gb-512gb
+58,lenovo-ideapad-slim-5-16gb-512gb,electronics,Lenovo,Lenovo IdeaPad Slim 5 16GB 512GB,Flipkart,63520,4.4,14911,2,/images/lenovo-ideapad-slim-5-16gb-512gb.jpg,https://flipkart.example.com/lenovo-ideapad-slim-5-16gb-512gb
+59,lenovo-ideapad-slim-5-16gb-512gb,electronics,Lenovo,Lenovo IdeaPad Slim 5 16GB 512GB,Myntra,66300,4.3,15876,5,/images/lenovo-ideapad-slim-5-16gb-512gb.jpg,https://myntra.example.com/lenovo-ideapad-slim-5-16gb-512gb
+60,lenovo-ideapad-slim-5-16gb-512gb,electronics,Lenovo,Lenovo IdeaPad Slim 5 16GB 512GB,Croma,64150,4.2,5598,4,/images/lenovo-ideapad-slim-5-16gb-512gb.jpg,https://croma.example.com/lenovo-ideapad-slim-5-16gb-512gb
+61,hp-victus-gaming-laptop-i5-16gb-512gb,electronics,HP,HP Victus Gaming Laptop i5 16GB 512GB,Amazon,72500,4.5,10722,2,/images/hp-victus-gaming-laptop-i5-16gb-512gb.jpg,https://amazon.example.com/hp-victus-gaming-laptop-i5-16gb-512gb
+62,hp-victus-gaming-laptop-i5-16gb-512gb,electronics,HP,HP Victus Gaming Laptop i5 16GB 512GB,Flipkart,72150,4.6,11335,4,/images/hp-victus-gaming-laptop-i5-16gb-512gb.jpg,https://flipkart.example.com/hp-victus-gaming-laptop-i5-16gb-512gb
+63,hp-victus-gaming-laptop-i5-16gb-512gb,electronics,HP,HP Victus Gaming Laptop i5 16GB 512GB,Myntra,74460,4.7,2515,5,/images/hp-victus-gaming-laptop-i5-16gb-512gb.jpg,https://myntra.example.com/hp-victus-gaming-laptop-i5-16gb-512gb
+64,hp-victus-gaming-laptop-i5-16gb-512gb,electronics,HP,HP Victus Gaming Laptop i5 16GB 512GB,Croma,72270,4.5,11563,3,/images/hp-victus-gaming-laptop-i5-16gb-512gb.jpg,https://croma.example.com/hp-victus-gaming-laptop-i5-16gb-512gb
+65,nike-club-men-hoodie-black,clothes,Nike,Nike Club Men Hoodie Black,Amazon,3000,4.5,4541,3,/images/nike-club-men-hoodie-black.jpg,https://amazon.example.com/nike-club-men-hoodie-black
+66,nike-club-men-hoodie-black,clothes,Nike,Nike Club Men Hoodie Black,Flipkart,3700,4.3,3962,2,/images/nike-club-men-hoodie-black.jpg,https://flipkart.example.com/nike-club-men-hoodie-black
+67,nike-club-men-hoodie-black,clothes,Nike,Nike Club Men Hoodie Black,Myntra,3090,4.4,4325,4,/images/nike-club-men-hoodie-black.jpg,https://myntra.example.com/nike-club-men-hoodie-black
+68,nike-club-men-hoodie-black,clothes,Nike,Nike Club Men Hoodie Black,Croma,4050,4.6,1256,5,/images/nike-club-men-hoodie-black.jpg,https://croma.example.com/nike-club-men-hoodie-black
+69,adidas-men-running-shoes-duramo-sl,clothes,Adidas,Adidas Men Running Shoes Duramo SL,Amazon,4550,4.6,1296,2,/images/adidas-men-running-shoes-duramo-sl.jpg,https://amazon.example.com/adidas-men-running-shoes-duramo-sl
+70,adidas-men-running-shoes-duramo-sl,clothes,Adidas,Adidas Men Running Shoes Duramo SL,Flipkart,4230,4.3,969,4,/images/adidas-men-running-shoes-duramo-sl.jpg,https://flipkart.example.com/adidas-men-running-shoes-duramo-sl
+71,adidas-men-running-shoes-duramo-sl,clothes,Adidas,Adidas Men Running Shoes Duramo SL,Myntra,4290,4.5,4568,6,/images/adidas-men-running-shoes-duramo-sl.jpg,https://myntra.example.com/adidas-men-running-shoes-duramo-sl
+72,adidas-men-running-shoes-duramo-sl,clothes,Adidas,Adidas Men Running Shoes Duramo SL,Croma,5260,4.4,3647,3,/images/adidas-men-running-shoes-duramo-sl.jpg,https://croma.example.com/adidas-men-running-shoes-duramo-sl
+73,levi-s-men-511-slim-jeans-blue,clothes,Levi's,Levi's Men 511 Slim Jeans Blue,Amazon,3200,4.6,375,1,/images/levi-s-men-511-slim-jeans-blue.jpg,https://amazon.example.com/levi-s-men-511-slim-jeans-blue
+74,levi-s-men-511-slim-jeans-blue,clothes,Levi's,Levi's Men 511 Slim Jeans Blue,Flipkart,2260,4.6,4208,4,/images/levi-s-men-511-slim-jeans-blue.jpg,https://flipkart.example.com/levi-s-men-511-slim-jeans-blue
+75,levi-s-men-511-slim-jeans-blue,clothes,Levi's,Levi's Men 511 Slim Jeans Blue,Myntra,2130,4.6,2498,5,/images/levi-s-men-511-slim-jeans-blue.jpg,https://myntra.example.com/levi-s-men-511-slim-jeans-blue
+76,levi-s-men-511-slim-jeans-blue,clothes,Levi's,Levi's Men 511 Slim Jeans Blue,Croma,3560,4.4,3485,5,/images/levi-s-men-511-slim-jeans-blue.jpg,https://croma.example.com/levi-s-men-511-slim-jeans-blue
+77,puma-unisex-essential-logo-tee,clothes,Puma,Puma Unisex Essential Logo Tee,Amazon,1600,4.3,4370,2,/images/puma-unisex-essential-logo-tee.jpg,https://amazon.example.com/puma-unisex-essential-logo-tee
+78,puma-unisex-essential-logo-tee,clothes,Puma,Puma Unisex Essential Logo Tee,Flipkart,1580,4.6,2288,4,/images/puma-unisex-essential-logo-tee.jpg,https://flipkart.example.com/puma-unisex-essential-logo-tee
+79,puma-unisex-essential-logo-tee,clothes,Puma,Puma Unisex Essential Logo Tee,Myntra,1130,4.7,2949,6,/images/puma-unisex-essential-logo-tee.jpg,https://myntra.example.com/puma-unisex-essential-logo-tee
+80,puma-unisex-essential-logo-tee,clothes,Puma,Puma Unisex Essential Logo Tee,Croma,1600,4.4,2647,5,/images/puma-unisex-essential-logo-tee.jpg,https://croma.example.com/puma-unisex-essential-logo-tee
