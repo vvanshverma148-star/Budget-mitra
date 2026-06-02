@@ -135,11 +135,12 @@ export default function ProductPage() {
 
         let finalProductId = matchedRow ? matchedRow.product_key : "";
 
+        const baseUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
         const [prodRes, searchRes, histRes, recRes] = await Promise.all([
-          fetch(`http://localhost:5000/api/get-product?productId=${finalProductId}`),
-          fetch(`http://localhost:5000/api/search-products?productId=${finalProductId}`),
-          fetch(`http://localhost:5000/api/get-history?productId=${finalProductId}`),
-          fetch(`http://localhost:5000/api/get-recommendation?productId=${finalProductId}`),
+          fetch(`${baseUrl}/api/get-product?productId=${finalProductId}`),
+          fetch(`${baseUrl}/api/search-products?productId=${finalProductId}`),
+          fetch(`${baseUrl}/api/get-history?productId=${finalProductId}`),
+          fetch(`${baseUrl}/api/get-recommendation?productId=${finalProductId}`),
         ]);
 
         if (!prodRes.ok) throw new Error("Product not found");

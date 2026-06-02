@@ -245,7 +245,8 @@ exports.getRecommendation = async (req, res) => {
     }));
 
     try {
-      const mlResponse = await fetch('http://127.0.0.1:8000/ml/predict', {
+      const mlUrl = process.env.ML_SERVICE_URL || 'http://127.0.0.1:8000';
+      const mlResponse = await fetch(`${mlUrl}/ml/predict`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ productId, history: historyPayload })
