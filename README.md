@@ -1,7 +1,7 @@
 <div align="center">
   <img src="https://via.placeholder.com/120x120/4F46E5/FFFFFF?text=AG" alt="Antigravity Logo" style="border-radius: 20%; margin-bottom: 20px;" width="120" height="120" />
   
-  <h1>🚀 Antigravity</h1>
+  <h1>Budget-Mitra</h1>
   <p><strong>AI-Powered Price Intelligence Platform</strong></p>
   
   > *"Don't just compare prices. Understand them."*
