@@ -46,7 +46,7 @@ Set a target price and forget it. Antigravity's background workers poll prices e
 
 ## 🏗️ Architecture & Tech Stack
 
-Antigravity uses a highly scalable, microservices-inspired architecture:
+Budget Mitra uses a highly scalable, microservices-inspired architecture:
 
 - **Frontend:** Next.js 14, React 18, Tailwind CSS, Zustand, Recharts (Hosted on Vercel)
 - **Backend API:** Node.js, Express, Bull Queue (Hosted on Render/Railway)
