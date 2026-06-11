@@ -6,12 +6,38 @@
 
 @layer base {
   body {
-    @apply bg-background text-textPrimary antialiased selection:bg-accent-blue selection:text-white min-h-screen relative overflow-x-hidden;
+    @apply bg-surface text-on-surface antialiased selection:bg-secondary selection:text-white min-h-screen relative overflow-x-hidden;
   }
 }
 
 @layer utilities {
-  /* Superdesign Custom Utilities for Glass & 3D */
+  /* Neumorphic Utilities */
+  .btn-neu {
+      box-shadow: 8px 8px 16px #B8C2D0, -8px -8px 16px #FFFFFF;
+      transition: all 0.2s ease-in-out;
+  }
+  .btn-neu:active {
+      box-shadow: inset 4px 4px 8px #B8C2D0, inset -4px -4px 8px #FFFFFF;
+      transform: scale(0.98);
+  }
+  
+  .input-neu {
+      box-shadow: inset 4px 4px 8px #B8C2D0, inset -4px -4px 8px #FFFFFF;
+      background-color: #fbf9fb;
+      border: none;
+  }
+  .input-neu:focus {
+      outline: none;
+      box-shadow: inset 6px 6px 12px #B8C2D0, inset -6px -6px 12px #FFFFFF;
+  }
+
+  .card-neu {
+      box-shadow: 8px 8px 16px #B8C2D0, -8px -8px 16px #FFFFFF;
+      background-color: #fbf9fb;
+      border-radius: 1rem;
+  }
+
+  /* Superdesign Custom Utilities for Glass & 3D (Legacy) */
   .glass-panel {
       background: linear-gradient(145deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
       backdrop-filter: blur(24px);

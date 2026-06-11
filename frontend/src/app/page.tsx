@@ -6,6 +6,7 @@ import { useState, useRef, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { Search, Link as LinkIcon, Type, ArrowRight, PlayCircle, TrendingUp, ShieldCheck, Zap, Sparkles, CalendarClock, User, LogOut } from "lucide-react";
 import { useAuth } from "@/context/AuthContext";
+import { AuroraBackground } from "@/components/ui/aurora-background";
 
 const staticProducts = [
   { product_key: "apple-iphone-15-128gb-black", product_name: "Apple iPhone 15 128GB Black", brand: "Apple", category: "mobile" },
@@ -221,7 +222,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-[#050914] text-white overflow-hidden relative selection:bg-cyan-500/30">
+    <AuroraBackground className="min-h-[100vh] w-full text-white overflow-hidden relative selection:bg-cyan-500/30" showRadialGradient={true}>
       
       {/* Animated Interactive Background Glows */}
       <div 
@@ -262,10 +263,10 @@ export default function Home() {
       <nav className="fixed w-full top-0 z-50 bg-[#050914]/60 backdrop-blur-md border-b border-white/5">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-400 to-blue-600 flex items-center justify-center shadow-[0_0_20px_rgba(34,211,238,0.4)]">
-              <TrendingUp className="text-white w-5 h-5" />
+            <div className="w-10 h-10 flex items-center justify-center">
+              <img src="/images/budget-mitra-logo-new.png" alt="Budget Mitra Logo" className="w-full h-full object-contain mix-blend-multiply dark:mix-blend-screen" />
             </div>
-            <span className="text-2xl font-black tracking-tight">Budget<span className="text-cyan-400">Mitra</span></span>
+            <span className="text-2xl font-black tracking-tight">Budget Mitra</span>
           </div>
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
             <a href="/compare" className="hover:text-cyan-400 transition-colors font-bold text-white flex items-center gap-1"><LinkIcon className="w-4 h-4"/> Compare</a>
@@ -523,6 +524,6 @@ export default function Home() {
         </div>
       </section>
 
-    </div>
+    </AuroraBackground>
   );
 }

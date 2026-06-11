@@ -48,154 +48,157 @@ export default function SignupPage() {
   };
 
   return (
-    <div className="min-h-screen bg-[#050914] text-white overflow-hidden relative flex items-center justify-center selection:bg-cyan-500/30 font-sans">
+    <div className="bg-surface font-body-md text-on-surface min-h-screen flex items-center justify-center p-margin-mobile md:p-margin-desktop selection:bg-secondary/30">
       
-      {/* 3D Background Orbs */}
-      <div className="absolute top-[-20%] left-[-10%] w-[60vw] h-[60vw] bg-cyan-900/20 blur-[150px] rounded-full mix-blend-screen pointer-events-none animate-pulse"></div>
-      <div className="absolute bottom-[-20%] right-[-10%] w-[50vw] h-[50vw] bg-emerald-900/20 blur-[150px] rounded-full mix-blend-screen pointer-events-none"></div>
-
-      {/* Floating 3D Elements */}
-      <div className="absolute w-full h-full overflow-hidden pointer-events-none">
-        <div className="absolute top-[20%] left-[10%] w-32 h-32 bg-gradient-to-br from-cyan-400/20 to-transparent rounded-full blur-2xl animate-float-slow"></div>
-        <div className="absolute top-[60%] right-[15%] w-40 h-40 bg-gradient-to-tl from-emerald-600/20 to-transparent rounded-full blur-2xl animate-float"></div>
-      </div>
-
       <button 
         onClick={() => router.push('/')}
-        className="absolute top-8 left-8 flex items-center gap-2 text-slate-400 hover:text-white transition-colors z-50 group"
+        className="absolute top-8 left-8 flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors z-50 group font-label-md"
       >
         <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform" /> Back to Home
       </button>
 
-      {/* 3D Card Container */}
-      <div 
-        className="relative z-10 w-full max-w-md p-8 perspective-1000 mt-12 mb-12"
-        onMouseMove={handleMouseMove}
-        onMouseEnter={() => setIsHovering(true)}
-        onMouseLeave={() => { setIsHovering(false); setMousePos({ x: 0, y: 0 }); }}
-      >
-        <div 
-          className="relative w-full h-full p-8 bg-slate-900/40 backdrop-blur-2xl border border-white/10 rounded-[2.5rem] shadow-2xl transition-all duration-300 ease-out preserve-3d"
-          style={{
-            transform: isHovering 
-              ? `rotateY(${mousePos.x * 20}deg) rotateX(${-mousePos.y * 20}deg) translateZ(20px)`
-              : 'rotateY(0deg) rotateX(0deg) translateZ(0px)',
-            boxShadow: isHovering 
-              ? `${-mousePos.x * 30}px ${-mousePos.y * 30}px 50px rgba(0,0,0,0.5), 0 0 40px rgba(34,211,238,0.2) inset` 
-              : '0 25px 50px -12px rgba(0, 0, 0, 0.5)'
-          }}
-        >
-          {/* Card Glow Border */}
-          <div className="absolute inset-0 rounded-[2.5rem] border border-cyan-500/20 shadow-[0_0_20px_rgba(34,211,238,0.1)] pointer-events-none transform translate-z-10"></div>
-          
-          <div className="text-center mb-8 transform translate-z-20">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-cyan-400 to-emerald-600 mb-6 shadow-[0_0_30px_rgba(52,211,153,0.4)]">
-              <UserPlus className="w-8 h-8 text-white" />
+      <main className="w-full max-w-5xl mx-auto flex flex-col md:flex-row gap-12 items-center justify-center">
+        {/* Left Side: Branding / Intro */}
+        <div className="hidden md:flex flex-col items-start w-1/2 p-8 space-y-6">
+          <div className="flex items-center gap-3">
+            <div className="w-12 h-12 rounded-full card-neu shadow-[8px_8px_16px_#B8C2D0,-8px_-8px_16px_#FFFFFF] flex items-center justify-center bg-surface">
+              <span className="material-symbols-outlined text-primary text-3xl" style={{fontVariationSettings: "'FILL' 1"}}>account_balance_wallet</span>
             </div>
-            <h1 className="text-3xl font-extrabold tracking-tight mb-2">Create Account</h1>
-            <p className="text-slate-400 text-sm font-medium">Join BudgetMitra for smarter shopping</p>
+            <h1 className="text-headline-lg font-bold text-primary tracking-tight">Budget Mitra</h1>
+          </div>
+          <p className="text-body-lg text-on-surface-variant max-w-md mt-4 leading-relaxed">
+            Experience the next generation of personal finance management. Secure, intuitive, and designed to help you achieve your financial goals with precision.
+          </p>
+          <div className="mt-12 flex gap-4">
+            <div className="w-16 h-16 rounded-full card-neu shadow-[8px_8px_16px_#B8C2D0,-8px_-8px_16px_#FFFFFF] flex items-center justify-center bg-surface text-secondary">
+              <span className="material-symbols-outlined text-2xl" style={{fontVariationSettings: "'FILL' 1"}}>shield</span>
+            </div>
+            <div className="w-16 h-16 rounded-full card-neu shadow-[8px_8px_16px_#B8C2D0,-8px_-8px_16px_#FFFFFF] flex items-center justify-center bg-surface text-secondary">
+              <span className="material-symbols-outlined text-2xl" style={{fontVariationSettings: "'FILL' 1"}}>monitoring</span>
+            </div>
+            <div className="w-16 h-16 rounded-full card-neu shadow-[8px_8px_16px_#B8C2D0,-8px_-8px_16px_#FFFFFF] flex items-center justify-center bg-surface text-secondary">
+              <span className="material-symbols-outlined text-2xl" style={{fontVariationSettings: "'FILL' 1"}}>pie_chart</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Right Side: Signup Form */}
+        <div className="w-full md:w-[480px] bg-surface rounded-[32px] card-neu shadow-[8px_8px_16px_#B8C2D0,-8px_-8px_16px_#FFFFFF] p-8 md:p-12 relative overflow-hidden">
+          
+          {/* Mobile Logo */}
+          <div className="flex md:hidden items-center justify-center gap-3 mb-8">
+            <div className="w-10 h-10 rounded-full card-neu shadow-[8px_8px_16px_#B8C2D0,-8px_-8px_16px_#FFFFFF] flex items-center justify-center bg-surface">
+              <span className="material-symbols-outlined text-primary text-2xl" style={{fontVariationSettings: "'FILL' 1"}}>account_balance_wallet</span>
+            </div>
+            <h1 className="text-headline-md font-bold text-primary tracking-tight">Budget Mitra</h1>
           </div>
 
-          <form onSubmit={handleSubmit} className="space-y-5 transform translate-z-30">
+          <div className="mb-8 text-center md:text-left">
+            <h2 className="text-headline-md font-bold text-on-surface mb-2 tracking-tight">Create Account</h2>
+            <p className="text-body-md text-on-surface-variant">Join BudgetMitra for smarter shopping.</p>
+          </div>
+
+          <form onSubmit={handleSubmit} className="space-y-6">
             {errorMsg && (
-              <div className="bg-rose-500/10 border border-rose-500/50 text-rose-400 text-sm font-bold px-4 py-3 rounded-xl text-center animate-pulse">
+              <div className="bg-error-container text-on-error-container text-sm font-bold px-4 py-3 rounded-xl text-center">
                 {errorMsg}
               </div>
             )}
-            <div className="space-y-2 relative group">
-              <label className="text-xs font-bold text-slate-400 uppercase tracking-wider ml-1">Full Name</label>
+            
+            {/* Full Name Input */}
+            <div className="space-y-2">
+              <label className="text-label-md font-semibold text-on-surface-variant ml-2 block">Full Name</label>
               <div className="relative">
-                <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                  <User className="w-5 h-5 text-slate-500 group-focus-within:text-cyan-400 transition-colors" />
-                </div>
+                <span className="material-symbols-outlined absolute left-4 top-1/2 transform -translate-y-1/2 text-outline">person</span>
                 <input 
                   type="text" 
                   required
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  className="w-full bg-slate-950/50 border border-slate-700/50 rounded-xl py-4 pl-12 pr-4 text-white placeholder-slate-600 outline-none focus:border-cyan-500/50 focus:ring-1 focus:ring-cyan-500/50 transition-all shadow-inner"
+                  className="w-full input-neu pl-12 pr-4 bg-surface rounded-xl shadow-[inset_4px_4px_8px_#B8C2D0,inset_-4px_-4px_8px_#FFFFFF] border-none text-body-md focus:ring-0 focus:outline-none placeholder-outline-variant text-on-surface py-4"
                   placeholder="John Doe"
                 />
               </div>
             </div>
 
-            <div className="space-y-2 relative group">
-              <label className="text-xs font-bold text-slate-400 uppercase tracking-wider ml-1">Email Address</label>
+            {/* Email Input */}
+            <div className="space-y-2">
+              <label className="text-label-md font-semibold text-on-surface-variant ml-2 block">Email Address</label>
               <div className="relative">
-                <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                  <Mail className="w-5 h-5 text-slate-500 group-focus-within:text-cyan-400 transition-colors" />
-                </div>
+                <span className="material-symbols-outlined absolute left-4 top-1/2 transform -translate-y-1/2 text-outline">mail</span>
                 <input 
                   type="email" 
                   required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full bg-slate-950/50 border border-slate-700/50 rounded-xl py-4 pl-12 pr-4 text-white placeholder-slate-600 outline-none focus:border-cyan-500/50 focus:ring-1 focus:ring-cyan-500/50 transition-all shadow-inner"
+                  className="w-full input-neu pl-12 pr-4 bg-surface rounded-xl shadow-[inset_4px_4px_8px_#B8C2D0,inset_-4px_-4px_8px_#FFFFFF] border-none text-body-md focus:ring-0 focus:outline-none placeholder-outline-variant text-on-surface py-4"
                   placeholder="name@example.com"
                 />
               </div>
             </div>
 
-            <div className="space-y-2 relative group">
-              <label className="text-xs font-bold text-slate-400 uppercase tracking-wider ml-1">Password</label>
+            {/* Password Input */}
+            <div className="space-y-2">
+              <label className="text-label-md font-semibold text-on-surface-variant ml-2 block">Password</label>
               <div className="relative">
-                <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                  <Lock className="w-5 h-5 text-slate-500 group-focus-within:text-cyan-400 transition-colors" />
-                </div>
+                <span className="material-symbols-outlined absolute left-4 top-1/2 transform -translate-y-1/2 text-outline">lock</span>
                 <input 
                   type={showPassword ? "text" : "password"} 
                   required
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="w-full bg-slate-950/50 border border-slate-700/50 rounded-xl py-4 pl-12 pr-12 text-white placeholder-slate-600 outline-none focus:border-cyan-500/50 focus:ring-1 focus:ring-cyan-500/50 transition-all shadow-inner font-mono tracking-widest"
+                  className="w-full input-neu pl-12 pr-12 bg-surface rounded-xl shadow-[inset_4px_4px_8px_#B8C2D0,inset_-4px_-4px_8px_#FFFFFF] border-none text-body-md focus:ring-0 focus:outline-none placeholder-outline-variant text-on-surface py-4 tracking-widest"
                   placeholder="••••••••"
                 />
                 <button 
                   type="button"
                   onClick={() => setShowPassword(!showPassword)}
-                  className="absolute inset-y-0 right-0 pr-4 flex items-center text-slate-500 hover:text-slate-300 transition-colors"
+                  className="absolute right-4 top-1/2 transform -translate-y-1/2 text-outline hover:text-primary transition-colors"
                 >
-                  {showPassword ? <EyeOff className="w-5 h-5" /> : <Eye className="w-5 h-5" />}
+                  <span className="material-symbols-outlined">{showPassword ? "visibility_off" : "visibility"}</span>
                 </button>
               </div>
             </div>
 
-            <div className="space-y-2 relative group">
-              <label className="text-xs font-bold text-slate-400 uppercase tracking-wider ml-1">Confirm Password</label>
+            {/* Confirm Password Input */}
+            <div className="space-y-2">
+              <label className="text-label-md font-semibold text-on-surface-variant ml-2 block">Confirm Password</label>
               <div className="relative">
-                <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                  <Lock className="w-5 h-5 text-slate-500 group-focus-within:text-cyan-400 transition-colors" />
-                </div>
+                <span className="material-symbols-outlined absolute left-4 top-1/2 transform -translate-y-1/2 text-outline">lock</span>
                 <input 
                   type={showPassword ? "text" : "password"} 
                   required
                   value={confirmPassword}
                   onChange={(e) => setConfirmPassword(e.target.value)}
-                  className="w-full bg-slate-950/50 border border-slate-700/50 rounded-xl py-4 pl-12 pr-12 text-white placeholder-slate-600 outline-none focus:border-cyan-500/50 focus:ring-1 focus:ring-cyan-500/50 transition-all shadow-inner font-mono tracking-widest"
+                  className="w-full input-neu pl-12 pr-12 bg-surface rounded-xl shadow-[inset_4px_4px_8px_#B8C2D0,inset_-4px_-4px_8px_#FFFFFF] border-none text-body-md focus:ring-0 focus:outline-none placeholder-outline-variant text-on-surface py-4 tracking-widest"
                   placeholder="••••••••"
                 />
               </div>
             </div>
 
+            {/* Primary Button */}
             <button 
               type="submit" 
               disabled={isLoading}
-              className="w-full py-4 mt-4 rounded-xl bg-gradient-to-r from-cyan-500 to-emerald-600 text-white font-bold text-lg hover:shadow-[0_0_30px_rgba(52,211,153,0.5)] transition-all flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed transform hover:-translate-y-1 active:translate-y-0"
+              className="w-full py-4 mt-4 bg-primary text-on-primary rounded-xl text-label-md font-bold btn-neu shadow-[8px_8px_16px_#B8C2D0,-8px_-8px_16px_#FFFFFF] hover:shadow-[inset_4px_4px_8px_#B8C2D0,inset_-4px_-4px_8px_#FFFFFF] active:shadow-[inset_4px_4px_8px_#B8C2D0,inset_-4px_-4px_8px_#FFFFFF] transition-all duration-200 flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
             >
               {isLoading ? (
-                <div className="w-6 h-6 border-3 border-white/30 border-t-white rounded-full animate-spin"></div>
+                <div className="w-6 h-6 border-3 border-on-primary/30 border-t-on-primary rounded-full animate-spin"></div>
               ) : (
-                <>Register <ArrowRight className="w-5 h-5" /></>
+                <>
+                  <span>Sign Up</span>
+                  <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                </>
               )}
             </button>
           </form>
 
-          <div className="mt-8 text-center text-sm text-slate-400 transform translate-z-20">
-            Already have an account? <button onClick={() => router.push('/login')} className="font-bold text-cyan-400 hover:text-cyan-300">Sign in</button>
-          </div>
-        </div>
-      </div>
+          <p className="text-center mt-8 text-body-md text-on-surface-variant">
+            Already have an account? <button onClick={() => router.push('/login')} className="text-secondary font-semibold hover:text-primary transition-colors">Sign in</button>
+          </p>
 
+        </div>
+      </main>
     </div>
   );
 }

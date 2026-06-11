@@ -20,33 +20,35 @@ export default function ComparePage() {
   const product2 = staticProducts.find(p => p.product_key === product2Key);
 
   return (
-    <div className="min-h-screen bg-[#050914] text-white selection:bg-cyan-500/30 font-sans">
+    <div className="bg-surface font-body-md text-on-surface min-h-screen flex flex-col antialiased selection:bg-secondary/30">
       
-      {/* Background */}
-      <div className="fixed inset-0 pointer-events-none opacity-20" style={{ backgroundImage: 'radial-gradient(circle at center, #22d3ee 1px, transparent 1px)', backgroundSize: '40px 40px' }}></div>
-      <div className="fixed top-[-20%] left-[-10%] w-[50vw] h-[50vw] bg-purple-900/10 blur-[150px] rounded-full mix-blend-screen pointer-events-none"></div>
-
-      {/* Navbar */}
-      <nav className="fixed w-full top-0 z-50 bg-[#050914]/80 backdrop-blur-xl border-b border-white/5">
-        <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-          <button onClick={() => router.push('/')} className="flex items-center gap-2 text-slate-400 hover:text-white transition-colors">
-            <ArrowLeft className="w-5 h-5" /> Back
-          </button>
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-purple-400 to-blue-600 flex items-center justify-center">
-              <GitCompare className="text-white w-4 h-4" />
-            </div>
-            <span className="text-xl font-black tracking-tight">Price<span className="text-purple-400">Compare</span></span>
+      {/* TopNavBar Shared Component */}
+      <nav className="bg-surface shadow-[8px_8px_16px_#B8C2D0,-8px_-8px_16px_#FFFFFF] sticky top-0 z-50">
+        <div className="flex justify-between items-center w-full px-margin-desktop py-4 max-w-container-max mx-auto px-margin-mobile">
+          <div className="flex items-center gap-4">
+            <button onClick={() => router.push('/')} className="text-headline-md font-bold text-on-surface flex items-center gap-2">
+              <span className="material-symbols-outlined text-secondary" style={{fontVariationSettings: "'FILL' 1"}}>account_balance_wallet</span>
+              Budget Mitra
+            </button>
+          </div>
+          <div className="hidden md:flex items-center gap-8">
+            <a className="text-secondary font-bold border-b-2 border-secondary pb-1 text-label-md hover:text-primary transition-all duration-300" href="/compare">Compare</a>
+            <a className="text-on-surface-variant font-medium text-label-md hover:text-primary transition-all duration-300" href="/alerts">Price Alerts</a>
+            <a className="text-on-surface-variant font-medium text-label-md hover:text-primary transition-all duration-300" href="#">Deals</a>
+            <a className="text-on-surface-variant font-medium text-label-md hover:text-primary transition-all duration-300" href="#">Calculators</a>
+          </div>
+          <div className="flex items-center gap-4">
+            <button className="hidden md:block btn-neu px-6 py-2 text-label-md text-primary font-medium" onClick={() => router.push('/login')}>Log In</button>
           </div>
         </div>
       </nav>
 
       {/* Main Content */}
-      <main className="relative z-10 max-w-7xl mx-auto px-6 pt-32 pb-20">
+      <main className="flex-grow w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12">
         
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-extrabold tracking-tight mb-4">Head-to-Head Comparison</h1>
-          <p className="text-slate-400">Select two products to instantly compare prices, historic lows, and AI recommendations.</p>
+          <h1 className="text-headline-lg font-bold tracking-tight mb-4 text-primary">Head-to-Head Comparison</h1>
+          <p className="text-on-surface-variant text-body-lg max-w-2xl mx-auto">Select two products to instantly compare prices, historic lows, and AI recommendations.</p>
         </div>
 
         {/* Selection Area */}
@@ -54,15 +56,15 @@ export default function ComparePage() {
           {/* Product 1 Selector */}
           <div className="relative group">
             <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none z-10">
-              <Search className="w-5 h-5 text-slate-500 group-focus-within:text-cyan-400 transition-colors" />
+              <span className="material-symbols-outlined text-secondary">search</span>
             </div>
             <select 
               value={product1Key}
               onChange={(e) => setProduct1Key(e.target.value)}
-              className="w-full bg-slate-900/80 backdrop-blur-md border border-slate-700/50 rounded-2xl py-5 pl-12 pr-4 text-white appearance-none outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-all font-bold text-lg"
+              className="w-full bg-surface input-neu pl-12 pr-4 py-5 rounded-2xl shadow-[inset_8px_8px_16px_#B8C2D0,inset_-8px_-8px_16px_#FFFFFF] border-none text-on-surface appearance-none outline-none focus:ring-0 transition-all font-bold text-lg"
             >
               {staticProducts.map(p => (
-                <option key={p.product_key} value={p.product_key} className="bg-slate-900 text-white">
+                <option key={p.product_key} value={p.product_key}>
                   {p.product_name}
                 </option>
               ))}
@@ -72,15 +74,15 @@ export default function ComparePage() {
           {/* Product 2 Selector */}
           <div className="relative group">
             <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none z-10">
-              <Search className="w-5 h-5 text-slate-500 group-focus-within:text-purple-400 transition-colors" />
+              <span className="material-symbols-outlined text-tertiary-fixed-dim">search</span>
             </div>
             <select 
               value={product2Key}
               onChange={(e) => setProduct2Key(e.target.value)}
-              className="w-full bg-slate-900/80 backdrop-blur-md border border-slate-700/50 rounded-2xl py-5 pl-12 pr-4 text-white appearance-none outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-all font-bold text-lg"
+              className="w-full bg-surface input-neu pl-12 pr-4 py-5 rounded-2xl shadow-[inset_8px_8px_16px_#B8C2D0,inset_-8px_-8px_16px_#FFFFFF] border-none text-on-surface appearance-none outline-none focus:ring-0 transition-all font-bold text-lg"
             >
               {staticProducts.map(p => (
-                <option key={p.product_key} value={p.product_key} className="bg-slate-900 text-white">
+                <option key={p.product_key} value={p.product_key}>
                   {p.product_name}
                 </option>
               ))}
@@ -90,109 +92,134 @@ export default function ComparePage() {
 
         {/* Comparison Matrix */}
         {(product1 && product2) && (
-          <div className="bg-slate-900/50 backdrop-blur-xl border border-slate-800 rounded-[2.5rem] overflow-hidden shadow-2xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             
-            <div className="grid grid-cols-2 divide-x divide-slate-800">
+            {/* Column 1 */}
+            <div className="card-neu shadow-[8px_8px_16px_#B8C2D0,-8px_-8px_16px_#FFFFFF] rounded-[32px] p-8 md:p-12 relative overflow-hidden flex flex-col">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-secondary/10 blur-3xl rounded-full"></div>
               
-              {/* Column 1 */}
-              <div className="p-8 md:p-12">
-                <div className="text-sm font-bold text-cyan-400 uppercase tracking-wider mb-2">{product1.brand}</div>
-                <h2 className="text-2xl font-bold text-white mb-12">{product1.product_name}</h2>
+              <div className="text-label-sm font-bold text-secondary uppercase tracking-wider mb-2">{product1.brand}</div>
+              <h2 className="text-headline-md font-bold text-primary mb-12">{product1.product_name}</h2>
 
-                <div className="space-y-8">
-                  <div>
-                    <div className="flex items-center justify-between mb-2">
-                      <div className="flex items-center gap-2 text-slate-400 font-medium">
-                        <Zap className="w-4 h-4 text-yellow-400" /> Current Price
-                      </div>
-                      <span className="px-2 py-0.5 bg-blue-500/10 text-blue-400 text-xs font-bold rounded border border-blue-500/20">{product1.platform}</span>
+              <div className="space-y-8 flex-grow">
+                <div>
+                  <div className="flex items-center justify-between mb-2">
+                    <div className="flex items-center gap-2 text-on-surface-variant font-medium text-label-md">
+                      <span className="material-symbols-outlined text-secondary text-[18px]">bolt</span> Current Price
                     </div>
-                    <div className="text-3xl font-black">₹{product1.current_price.toLocaleString()}</div>
+                    <span className="px-3 py-1 bg-surface input-neu shadow-[inset_4px_4px_8px_#B8C2D0,inset_-4px_-4px_8px_#FFFFFF] text-secondary text-label-sm font-bold rounded-lg">{product1.platform}</span>
                   </div>
+                  <div className="text-[40px] font-bold text-primary tracking-tight">₹{product1.current_price.toLocaleString()}</div>
+                </div>
 
-                  <div>
-                    <div className="flex items-center gap-2 text-slate-400 mb-2 font-medium">
-                      <Activity className="w-4 h-4 text-emerald-400" /> Historic Low
-                    </div>
-                    <div className="text-2xl font-bold text-emerald-400">₹{product1.historic_low.toLocaleString()}</div>
+                <div>
+                  <div className="flex items-center gap-2 text-on-surface-variant mb-2 font-medium text-label-md">
+                    <span className="material-symbols-outlined text-tertiary-fixed-dim text-[18px]">history</span> Historic Low
                   </div>
+                  <div className="text-headline-md font-bold text-tertiary-fixed-dim" style={{color: '#009865'}}>₹{product1.historic_low.toLocaleString()}</div>
+                </div>
 
-                  <div className="pt-6 border-t border-slate-800">
-                    <div className="flex items-center gap-2 text-slate-400 mb-4 font-medium">
-                      <Brain className="w-4 h-4 text-cyan-400" /> AI Recommendation
-                    </div>
-                    <div className={`inline-block px-4 py-2 rounded-xl border font-bold text-lg ${product1.recommendation === 'BUY' ? 'bg-emerald-500/10 border-emerald-500/20 text-emerald-400' : 'bg-amber-500/10 border-amber-500/20 text-amber-400'}`}>
-                      {product1.recommendation}
-                    </div>
+                <div className="pt-6 border-t border-surface-dim">
+                  <div className="flex items-center gap-2 text-on-surface-variant mb-4 font-medium text-label-md">
+                    <span className="material-symbols-outlined text-secondary text-[18px]">psychology</span> AI Recommendation
                   </div>
-
-                  <div className="pt-6 border-t border-slate-800">
-                    <div className="text-slate-500 font-medium mb-3">Review Summary</div>
-                    <p className="text-sm text-slate-300 leading-relaxed italic border-l-2 border-cyan-500/50 pl-3">
-                      "{product1.review_summary}"
-                    </p>
+                  <div className={`inline-block px-6 py-2 rounded-xl font-bold text-label-md bg-surface shadow-[4px_4px_8px_#B8C2D0,-4px_-4px_8px_#FFFFFF] ${product1.recommendation === 'BUY' ? 'text-tertiary-fixed-dim' : 'text-primary'}`} style={{color: product1.recommendation === 'BUY' ? '#009865' : '#00030a'}}>
+                    {product1.recommendation}
                   </div>
+                </div>
 
-                  <div className="pt-6 border-t border-slate-800 space-y-3">
-                    <div className="text-slate-500 font-medium mb-4">Specifications</div>
-                    <div className="flex justify-between text-sm"><span className="text-slate-400">Storage</span><span className="font-semibold">{product1.specs.storage}</span></div>
-                    <div className="flex justify-between text-sm"><span className="text-slate-400">Display</span><span className="font-semibold">{product1.specs.display}</span></div>
-                    <div className="flex justify-between text-sm"><span className="text-slate-400">Camera</span><span className="font-semibold">{product1.specs.camera}</span></div>
-                    <div className="flex justify-between text-sm"><span className="text-slate-400">Battery</span><span className="font-semibold">{product1.specs.battery}</span></div>
+                <div className="pt-6 border-t border-surface-dim">
+                  <div className="text-on-surface-variant font-semibold mb-3 text-label-md">Review Summary</div>
+                  <p className="text-body-md text-on-surface-variant leading-relaxed italic border-l-4 border-secondary pl-4 py-1">
+                    "{product1.review_summary}"
+                  </p>
+                </div>
+
+                <div className="pt-6 border-t border-surface-dim space-y-4">
+                  <div className="text-on-surface-variant font-semibold mb-4 text-label-md">Specifications</div>
+                  <div className="flex justify-between items-center bg-surface input-neu shadow-[inset_4px_4px_8px_#B8C2D0,inset_-4px_-4px_8px_#FFFFFF] p-3 rounded-xl">
+                    <span className="text-on-surface-variant text-label-md">Storage</span>
+                    <span className="font-bold text-primary text-label-md">{product1.specs.storage}</span>
+                  </div>
+                  <div className="flex justify-between items-center bg-surface input-neu shadow-[inset_4px_4px_8px_#B8C2D0,inset_-4px_-4px_8px_#FFFFFF] p-3 rounded-xl">
+                    <span className="text-on-surface-variant text-label-md">Display</span>
+                    <span className="font-bold text-primary text-label-md text-right">{product1.specs.display}</span>
+                  </div>
+                  <div className="flex justify-between items-center bg-surface input-neu shadow-[inset_4px_4px_8px_#B8C2D0,inset_-4px_-4px_8px_#FFFFFF] p-3 rounded-xl">
+                    <span className="text-on-surface-variant text-label-md">Camera</span>
+                    <span className="font-bold text-primary text-label-md text-right">{product1.specs.camera}</span>
+                  </div>
+                  <div className="flex justify-between items-center bg-surface input-neu shadow-[inset_4px_4px_8px_#B8C2D0,inset_-4px_-4px_8px_#FFFFFF] p-3 rounded-xl">
+                    <span className="text-on-surface-variant text-label-md">Battery</span>
+                    <span className="font-bold text-primary text-label-md">{product1.specs.battery}</span>
                   </div>
                 </div>
               </div>
-
-              {/* Column 2 */}
-              <div className="p-8 md:p-12 bg-slate-950/20">
-                <div className="text-sm font-bold text-purple-400 uppercase tracking-wider mb-2">{product2.brand}</div>
-                <h2 className="text-2xl font-bold text-white mb-12">{product2.product_name}</h2>
-
-                <div className="space-y-8">
-                  <div>
-                    <div className="flex items-center justify-between mb-2">
-                      <div className="flex items-center gap-2 text-slate-400 font-medium">
-                        <Zap className="w-4 h-4 text-yellow-400" /> Current Price
-                      </div>
-                      <span className="px-2 py-0.5 bg-blue-500/10 text-blue-400 text-xs font-bold rounded border border-blue-500/20">{product2.platform}</span>
-                    </div>
-                    <div className="text-3xl font-black">₹{product2.current_price.toLocaleString()}</div>
-                  </div>
-
-                  <div>
-                    <div className="flex items-center gap-2 text-slate-400 mb-2 font-medium">
-                      <Activity className="w-4 h-4 text-emerald-400" /> Historic Low
-                    </div>
-                    <div className="text-2xl font-bold text-emerald-400">₹{product2.historic_low.toLocaleString()}</div>
-                  </div>
-
-                  <div className="pt-6 border-t border-slate-800">
-                    <div className="flex items-center gap-2 text-slate-400 mb-4 font-medium">
-                      <Brain className="w-4 h-4 text-purple-400" /> AI Recommendation
-                    </div>
-                    <div className={`inline-block px-4 py-2 rounded-xl border font-bold text-lg ${product2.recommendation === 'BUY' ? 'bg-emerald-500/10 border-emerald-500/20 text-emerald-400' : 'bg-amber-500/10 border-amber-500/20 text-amber-400'}`}>
-                      {product2.recommendation}
-                    </div>
-                  </div>
-
-                  <div className="pt-6 border-t border-slate-800">
-                    <div className="text-slate-500 font-medium mb-3">Review Summary</div>
-                    <p className="text-sm text-slate-300 leading-relaxed italic border-l-2 border-purple-500/50 pl-3">
-                      "{product2.review_summary}"
-                    </p>
-                  </div>
-
-                  <div className="pt-6 border-t border-slate-800 space-y-3">
-                    <div className="text-slate-500 font-medium mb-4">Specifications</div>
-                    <div className="flex justify-between text-sm"><span className="text-slate-400">Storage</span><span className="font-semibold">{product2.specs.storage}</span></div>
-                    <div className="flex justify-between text-sm"><span className="text-slate-400">Display</span><span className="font-semibold">{product2.specs.display}</span></div>
-                    <div className="flex justify-between text-sm"><span className="text-slate-400">Camera</span><span className="font-semibold">{product2.specs.camera}</span></div>
-                    <div className="flex justify-between text-sm"><span className="text-slate-400">Battery</span><span className="font-semibold">{product2.specs.battery}</span></div>
-                  </div>
-                </div>
-              </div>
-
             </div>
+
+            {/* Column 2 */}
+            <div className="card-neu shadow-[8px_8px_16px_#B8C2D0,-8px_-8px_16px_#FFFFFF] rounded-[32px] p-8 md:p-12 relative overflow-hidden flex flex-col">
+              <div className="absolute top-0 left-0 w-32 h-32 bg-tertiary-fixed-dim/10 blur-3xl rounded-full"></div>
+              
+              <div className="text-label-sm font-bold text-tertiary-fixed-dim uppercase tracking-wider mb-2" style={{color: '#009865'}}>{product2.brand}</div>
+              <h2 className="text-headline-md font-bold text-primary mb-12">{product2.product_name}</h2>
+
+              <div className="space-y-8 flex-grow">
+                <div>
+                  <div className="flex items-center justify-between mb-2">
+                    <div className="flex items-center gap-2 text-on-surface-variant font-medium text-label-md">
+                      <span className="material-symbols-outlined text-secondary text-[18px]">bolt</span> Current Price
+                    </div>
+                    <span className="px-3 py-1 bg-surface input-neu shadow-[inset_4px_4px_8px_#B8C2D0,inset_-4px_-4px_8px_#FFFFFF] text-secondary text-label-sm font-bold rounded-lg">{product2.platform}</span>
+                  </div>
+                  <div className="text-[40px] font-bold text-primary tracking-tight">₹{product2.current_price.toLocaleString()}</div>
+                </div>
+
+                <div>
+                  <div className="flex items-center gap-2 text-on-surface-variant mb-2 font-medium text-label-md">
+                    <span className="material-symbols-outlined text-tertiary-fixed-dim text-[18px]">history</span> Historic Low
+                  </div>
+                  <div className="text-headline-md font-bold text-tertiary-fixed-dim" style={{color: '#009865'}}>₹{product2.historic_low.toLocaleString()}</div>
+                </div>
+
+                <div className="pt-6 border-t border-surface-dim">
+                  <div className="flex items-center gap-2 text-on-surface-variant mb-4 font-medium text-label-md">
+                    <span className="material-symbols-outlined text-secondary text-[18px]">psychology</span> AI Recommendation
+                  </div>
+                  <div className={`inline-block px-6 py-2 rounded-xl font-bold text-label-md bg-surface shadow-[4px_4px_8px_#B8C2D0,-4px_-4px_8px_#FFFFFF] ${product2.recommendation === 'BUY' ? 'text-tertiary-fixed-dim' : 'text-primary'}`} style={{color: product2.recommendation === 'BUY' ? '#009865' : '#00030a'}}>
+                    {product2.recommendation}
+                  </div>
+                </div>
+
+                <div className="pt-6 border-t border-surface-dim">
+                  <div className="text-on-surface-variant font-semibold mb-3 text-label-md">Review Summary</div>
+                  <p className="text-body-md text-on-surface-variant leading-relaxed italic border-l-4 border-tertiary-fixed-dim pl-4 py-1" style={{borderColor: '#009865'}}>
+                    "{product2.review_summary}"
+                  </p>
+                </div>
+
+                <div className="pt-6 border-t border-surface-dim space-y-4">
+                  <div className="text-on-surface-variant font-semibold mb-4 text-label-md">Specifications</div>
+                  <div className="flex justify-between items-center bg-surface input-neu shadow-[inset_4px_4px_8px_#B8C2D0,inset_-4px_-4px_8px_#FFFFFF] p-3 rounded-xl">
+                    <span className="text-on-surface-variant text-label-md">Storage</span>
+                    <span className="font-bold text-primary text-label-md">{product2.specs.storage}</span>
+                  </div>
+                  <div className="flex justify-between items-center bg-surface input-neu shadow-[inset_4px_4px_8px_#B8C2D0,inset_-4px_-4px_8px_#FFFFFF] p-3 rounded-xl">
+                    <span className="text-on-surface-variant text-label-md">Display</span>
+                    <span className="font-bold text-primary text-label-md text-right">{product2.specs.display}</span>
+                  </div>
+                  <div className="flex justify-between items-center bg-surface input-neu shadow-[inset_4px_4px_8px_#B8C2D0,inset_-4px_-4px_8px_#FFFFFF] p-3 rounded-xl">
+                    <span className="text-on-surface-variant text-label-md">Camera</span>
+                    <span className="font-bold text-primary text-label-md text-right">{product2.specs.camera}</span>
+                  </div>
+                  <div className="flex justify-between items-center bg-surface input-neu shadow-[inset_4px_4px_8px_#B8C2D0,inset_-4px_-4px_8px_#FFFFFF] p-3 rounded-xl">
+                    <span className="text-on-surface-variant text-label-md">Battery</span>
+                    <span className="font-bold text-primary text-label-md">{product2.specs.battery}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         )}
 

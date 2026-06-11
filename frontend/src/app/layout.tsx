@@ -19,9 +19,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${jetbrainsMono.variable} font-sans bg-background min-h-screen`}>
+      <body className={`${inter.variable} ${jetbrainsMono.variable} font-sans bg-surface min-h-screen flex flex-col`}>
         <AuthProvider>
-          {children}
+          <div className="flex-grow flex flex-col">
+            {children}
+          </div>
+          <footer className="w-full py-6 mt-auto flex items-center justify-center bg-surface">
+            <p className="text-slate-500 text-sm">made by The GC Coders</p>
+          </footer>
         </AuthProvider>
       </body>
     </html>
